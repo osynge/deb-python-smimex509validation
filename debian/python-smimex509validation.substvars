@@ -1,0 +1,4 @@
+python:Versions=2.6, 2.7
+python:Provides=python2.6-smimex509validation, python2.7-smimex509validation
+python:Depends=python (>= 2.6), python (<< 2.8), python (>= 2.6.6-7~), python-m2crypto
+misc:Depends=
