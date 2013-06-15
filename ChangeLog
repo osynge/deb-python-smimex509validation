@@ -1,0 +1,46 @@
+smimeX509validation-0.0.11
+
+* Changed README to README.md
+* Improved Documentation
+* Due to bug found in client passing unicode when m2crypto expects a "str" type, all input strings are cast 
+  to str.
+
+smimeX509validation-0.0.10
+
+* Improved error logging on CRL errors.
+
+smimeX509validation-0.0.9
+
+* Restructured the code to make it easier to reuse.
+
+smimeX509validation-0.0.8
+
+* Added and Apache License, Version 2.0
+* Improved error handling for failed to parse CRL's.
+* when CRL expiry is found on loading and parsing all CRL the message has been 
+    reduced from WARNING to INFO.
+
+
+smimeX509validation-0.0.7
+
+* Updated README
+
+smimeX509validation-0.0.5
+
+* Improved Packaging
+* Looking up CA chain of trust rather than just issuer.
+
+smimeX509validation-0.0.5
+
+Clearer handling of error messages about CRL messages.
+    The following new error messages have been added:
+    Failed to Parse CRL expiry date
+    Failed to parse CRL creation date
+    CRL is created in the future
+    CRL list unpassed
+Better handling of too old versions of m2crypto.
+    New error message
+    'm2crypto version 0.18 is the minimum supported, please upgrade.
+Removed python 2.6 only feature, so the code now works on python 2.5 again.
+Added 'README','ChangeLog','TODO', 'outline_code.py','message_signed_validation.py' to RPM.
+Added Manifest for packaging

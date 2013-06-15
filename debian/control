@@ -1,0 +1,14 @@
+Source: smimex509validation
+Maintainer: Owen Synge <owen.synge@jaysnest.de>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7)
+Standards-Version: 3.9.1
+
+Package: python-smimex509validation
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Utility for Verifying smime Message Signatures
+ The aim of this code is to authenticate SMIME signed messages, loading CRL's and CA details
+ following the Trust Anchor Distribution trust anchor system. The library does not retrive
+ CRL's it is recomended that other tools such as fetch-crl to update your CRL's.
